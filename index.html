@@ -1,0 +1,386 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohit Sharma | Cricket Legend</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #07101e;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: #0b172b;
+    border-bottom: 2px solid #ff8c32;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #ff9c43;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 17px;
+}
+
+nav a:hover {
+    color: #ff9c43;
+}
+
+.hero {
+    min-height: 570px;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    flex-wrap: wrap;
+    background:
+      linear-gradient(90deg, #07101ef5 20%, #07101e80),
+      url("https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=1600&q=85");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.tag {
+    color: #ff9c43;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    margin: 20px 0;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #ff9c43;
+}
+
+.hero p {
+    color: #d2d8e3;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff8c32;
+    color: #111827;
+    padding: 14px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+section {
+    padding: 65px 7%;
+}
+
+.title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.title span {
+    color: #ff9c43;
+}
+
+.subtitle {
+    text-align: center;
+    color: #bdc6d6;
+    margin: 0 auto 35px;
+    max-width: 700px;
+    line-height: 1.8;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #111f35;
+    border: 1px solid #263852;
+    border-radius: 12px;
+    padding: 28px 22px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #ff9c43;
+}
+
+.card h3 {
+    color: #ff9c43;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #d0d7e3;
+    line-height: 1.8;
+}
+
+.about {
+    background: #0b172b;
+}
+
+.about p {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    color: #d0d7e3;
+    line-height: 2;
+    font-size: 17px;
+}
+
+.highlight {
+    color: #ffb46e;
+    font-weight: bold;
+}
+
+.achievements .card {
+    text-align: center;
+}
+
+.achievements .number {
+    color: #ff9c43;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.creator {
+    text-align: center;
+    background: linear-gradient(135deg, #10233e, #07101e);
+}
+
+.creator h3 {
+    font-size: 26px;
+    color: #ff9c43;
+    margin-bottom: 12px;
+}
+
+.creator p {
+    color: #d0d7e3;
+    line-height: 2;
+}
+
+footer {
+    padding: 28px 15px;
+    text-align: center;
+    background: #040912;
+    color: #aeb8c8;
+    line-height: 2;
+}
+
+footer span {
+    color: #ff9c43;
+}
+
+@media(max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    .hero {
+        text-align: center;
+        justify-content: center;
+        min-height: 500px;
+    }
+
+    section {
+        padding: 45px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🏏 ROHIT SHARMA</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#career">Career</a>
+        <a href="#achievements">Achievements</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <div class="hero-text">
+        <div class="tag">INDIAN CRICKET • HITMAN</div>
+
+        <h1>ROHIT<br><span>SHARMA</span></h1>
+
+        <p>
+            Welcome to the cricket fan website dedicated to
+            Rohit Sharma, one of India's most celebrated batters,
+            known for his elegant batting and memorable big scores.
+        </p>
+
+        <a href="#career" class="btn">Explore His Career →</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2 class="title">ABOUT <span>ROHIT</span></h2>
+
+    <p>
+        Rohit Sharma is an Indian international cricketer, born
+        on 30 April 1987 in Bansod, Nagpur, Maharashtra.
+        He is famous for his stylish batting, powerful sixes
+        and excellent timing. Fans call him
+        <span class="highlight">"Hitman"</span>.
+        His journey inspires young cricket lovers around the world.
+    </p>
+</section>
+
+<!-- CAREER -->
+<section id="career">
+    <h2 class="title">CRICKET <span>CAREER</span></h2>
+
+    <p class="subtitle">
+        Some important highlights from Rohit Sharma's cricket journey.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🏏 Batting Style</h3>
+            <p>
+                Right-handed batter known for timing, elegant
+                shots and powerful six-hitting.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌍 International Cricket</h3>
+            <p>
+                Represented India in Test cricket, One Day
+                Internationals and T20 Internationals.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>👑 Captaincy</h3>
+            <p>
+                Led India in major international tournaments
+                and helped the team win the 2024 T20 World Cup.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💥 Batting Records</h3>
+            <p>
+                Holds the men's ODI individual highest-score
+                record with 264 runs in one innings.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="about achievements" id="achievements">
+    <h2 class="title">MAJOR <span>ACHIEVEMENTS</span></h2>
+
+    <p class="subtitle">
+        Memorable milestones in Indian cricket.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <div class="number">264</div>
+            <h3>ODI Record</h3>
+            <p>Highest individual score in men's ODI cricket.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">2013</div>
+            <h3>Champions Trophy</h3>
+            <p>Part of India's Champions Trophy-winning squad.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">2024</div>
+            <h3>T20 World Cup</h3>
+            <p>Captained India to the men's T20 World Cup title.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">2025</div>
+            <h3>Champions Trophy</h3>
+            <p>Part of India's Champions Trophy-winning team.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CREATOR -->
+<section class="creator">
+    <h2 class="title">WEBSITE <span>CREATOR</span></h2>
+
+    <h3>Raj Kumar Nayak</h3>
+    <p>Class 9th Student</p>
+    <p>School: Sandipani School</p>
+    <p>Project: Rohit Sharma Cricket Website</p>
+    <p>Made with ❤️ for Cricket</p>
+</section>
+
+<footer>
+    <p>🏏 Cricket is more than a game — it is a passion!</p>
+    <p>Created by <span>Raj Kumar Nayak</span> | Class 9th</p>
+    <p>© 2026 Student Fan Website</p>
+</footer>
+
+</body>
+</html>
+```
